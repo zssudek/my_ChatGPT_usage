@@ -49,7 +49,7 @@ The data will come from my ChatGPT usage logs, including timestamps and conversa
 ### **How to Use This Repository**
 1. **Clone the Repository**:
    ```sh
-   git clone [repository_url]
+   git clone https://github.com/zssudek/my_ChatGPT_usage
    ```
 2. **Environment Setup**: Install required packages:
    ```sh
