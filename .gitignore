@@ -5,3 +5,4 @@ results/
 *.csv
 *.json
 .DS_Store
+*.html
