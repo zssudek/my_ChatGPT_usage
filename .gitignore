@@ -4,5 +4,5 @@ data/
 results/
 *.csv
 *.json
+chat.html
 .DS_Store
-*.html
