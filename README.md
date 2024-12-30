@@ -3,69 +3,71 @@ Desperately searching for why do I pay 20$ each month to this tool...
 
 # README: ChatGPT Usage Analysis Project
 
-## Project Title: **Understanding My ChatGPT Usage Patterns and Learning Evolution**
+## Overview
+This project analyzes ChatGPT usage based on categorized and processed conversation data. The aim is to understand how ChatGPT has been utilized, focusing on different application categories, message trends over time, and the sentiment of user interactions.
 
-### **Project Overview**
-This project analyzes my interactions with ChatGPT to understand how I use it for learning, problem-solving, and advice. By categorizing my interactions, I aim to track my learning journey and progression as a computer science student.
+## Key Features
+- **Categorization**: Messages are categorized into various groups such as Homework/Projects, Learning, Technical Help, and more.
+- **Sentiment Analysis**: Determines the emotional tone of messages across categories.
+- **Correlation Analysis**: Identifies relationships between variables such as message length and sentiment, or hour of day and sentiment.
+- **Visualizations**: Provides insightful charts to display usage patterns and trends.
 
-### **Motivation**
-The project aims to:
-- **Understand my learning habits** by analyzing interactions with ChatGPT.
-- Create a **data science portfolio** to demonstrate proficiency in data collection, machine learning, and data visualization, reflecting my learning journey.
+## Visualizations
+The project generates the following visualizations:
+1. Final Categories Pie Chart: Displays the distribution of all messages across categories.
+2. Short Messages Pie Chart: Shows subcategories for short messages.
+3. Messages Over Time Line Chart: Highlights daily activity trends.
+4. Hourly Message Activity Bar Chart: Illustrates message activity by hour.
+5. Sentiment Distribution Bar Chart: Represents the polarity of sentiment in messages.
+6. Average Sentiment by Category Bar Chart: Shows average sentiment for each category.
+7. Correlation Scatter Plots:
+   - Hour of Day vs Sentiment
+   - Message Length vs Sentiment
 
-### **Project Objectives**
-1. **Categorize Interactions**: Classify conversations by purpose (e.g., learning, debugging, career advice).
-2. **Analyze Trends**: Track changes in usage and learning focus over time.
-3. **Visualize Insights**: Use data visualization to illustrate my learning evolution.
+## Processed Data
+The processed conversation data is saved in a CSV file:
+- **File**: `categorized_homework_analysis.csv`
+- **Content**:
+  - Categorized messages
+  - Sentiment scores
+  - Additional metadata such as timestamps, message length, and categories
 
-### **Data Source**
-The data will come from my ChatGPT usage logs, including timestamps and conversation details. Data will be collected via API and manual exports, ensuring anonymization for privacy.
+## Installation
+To run this project, follow the steps below:
 
-### **Techniques Used**
-1. **Data Collection and Preprocessing**: Collect data from logs using API integration and organize it for analysis.
-2. **Exploratory Data Analysis (EDA)**: Explore dataset features like common topics and interaction frequency.
-3. **Data Visualization**: Use matplotlib and seaborn for trend and pattern visualizations.
-4. **Hypothesis Testing**: Test hypotheses about usage patterns, like increased activity before exams.
-5. **Machine Learning**: Use classification models for supervised learning and clustering for unsupervised insights.
-6. **Text Analysis**: Apply NLP for topic modeling to categorize conversation themes.
-7. **Causal Inference**: Attempt to infer relationships between interaction types and performance.
+1. Clone the repository: git clone <repository_url>
+2. Navigate to the project directory
+3. Install the required dependencies: pip install -r requirements.txt
 
-### **Analysis & Findings**
-- **Interaction Categories**: Classify conversations into "Learning," "Debugging," and "Career Guidance." Initial interactions are expected to focus on learning, shifting to more problem-solving over time.
-- **Learning Evolution**: Expect a shift from broad topics to more specialized questions.
-- **Emotional Tone**: Apply sentiment analysis to determine emotional trends, with positive sentiment for learning topics and negative for debugging.
+## How to Run
+1.Run the analysis script:
+python setup.py
 
-### **Technologies and Tools Used**
-- **Python**: For data analysis and machine learning.
-- **Pandas, NumPy**: For data manipulation.
-- **Matplotlib, Seaborn**: For visualizations.
-- **scikit-learn**: For machine learning models.
-- **NLTK/TextBlob**: For sentiment analysis.
+2. View the generated charts and the saved CSV file in the project folder.
 
-### **Limitations and Future Work**
-- **Limitations**: The dataset is limited to personal usage and may not represent others. Sentiment analysis may be imperfect due to text nuances.
-- **Future Work**: Collect more data for long-term analysis and explore advanced NLP techniques for deeper insights.
+## Requirements
+The project uses the following Python libraries:
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `textblob`
+- `fpdf`
 
-### **How to Use This Repository**
-1. **Clone the Repository**:
-   ```sh
-   git clone https://github.com/zssudek/my_ChatGPT_usage
-   ```
-2. **Environment Setup**: Install required packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. **Data Analysis**: Use Jupyter notebooks for step-by-step analysis.
+Install all dependencies using the provided `requirements.txt` file.
 
-### **Repository Structure**
-- `data/`: Anonymized dataset.
-- `notebooks/`: Jupyter notebooks for different analysis phases.
-- `results/`: Visualizations and summary reports.
-- `README.md`: Project overview.
+## Outputs
+1. Charts: PNG files for all visualizations mentioned above.
+2. Data File: A categorized CSV file (`categorized_homework_analysis.csv`) containing the processed data.
+3. PDF Report: A comprehensive report summarizing the analysis and including visualizations.
 
-### **Acknowledgments**
-This project is part of the **Introduction to Data Science** class. Thanks to my instructors for their foundational support.
+## Future Work
+Possible enhancements include:
+- Dynamic dashboards using tools like `Streamlit` or `Dash`.
+- Advanced sentiment analysis using a pre-trained language model.
+- Integration with real-time data sources for continuous analysis.
 
-### **Contact**
-For questions or suggestions, contact me at: zeynepkurnaz@sabanciuniv.edu
+## License
+This project is open-source and available under the MIT License.
+
+
 
